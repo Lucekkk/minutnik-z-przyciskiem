@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+     
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(9,35,128);
+    background: linear-gradient(140deg, rgba(9,35,128,1) 0%, rgba(210,17,144,1) 100%); 
+    
+}
+.wrapper{
+    /* background-color: red; */
+    min-width: 600px;
+    min-height: 600px;
+    position: relative;
+}
+.outerProgress{
+    height: 600px;
+    width: 600px;
+    /* border: 2px solid green; */
+     
+    border-radius: 50%;
+    padding: 50px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 12px -3px rgba(0, 0, 0, 0.1);
+    background: conic-gradient(rgb(239 0 0 / 20%) 360deg, transparent 0deg);
+}
+ 
+.digits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px white;
+    /* background-color: blue; */
+}
+.digits input{
+    width: 19%;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white; 
+}
+.digits input:hover{
+    border-bottom: 2px solid white;
+}
+.digits input:focus{
+    border-bottom: 2px solid white; 
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ .start{
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, -7%);
+    /* min-width: 14vw; */
+    width: 350px;
+    border-radius: 50%;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 60px;
+    cursor: pointer;
+    box-shadow: 0px 4px 1px 0 seashell;
+    text-shadow: 0px 0px 4px white;
+    background-color: rgb(192, 24, 91);
+    border: none;
+ }
+ .start:active{
+    box-shadow: 0px 1px 1px 0 seashell;
+    bottom: 6%;
+ }
+
+ 
